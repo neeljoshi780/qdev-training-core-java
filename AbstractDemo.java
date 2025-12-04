@@ -1,13 +1,14 @@
 // Abstract class for Shape
 abstract class Shape {
-    
+
     // Abstract method (does not have a body)
     public abstract void draw();
-    
+
     // Regular method (with a body)
     public void description() {
         System.out.println("This is a shape.");
     }
+
 }
 
 // Subclass Circle that extends Shape and provides implementation for draw()
@@ -17,6 +18,7 @@ class Circle extends Shape {
     public void draw() {
         System.out.println("Drawing a circle.");
     }
+
 }
 
 // Subclass Rectangle that extends Shape and provides implementation for draw()
@@ -26,6 +28,7 @@ class Rectangle extends Shape {
     public void draw() {
         System.out.println("Drawing a rectangle.");
     }
+
 }
 
 /**
@@ -44,10 +47,11 @@ public class AbstractDemo {
         Shape circle = new Circle();
         circle.draw();  // Call the draw method for Circle
         circle.description(); // Call the regular method description
-        
+    
         // Create an object of Rectangle
         Shape rectangle = new Rectangle();
         rectangle.draw();  // Call the draw method for Rectangle
         rectangle.description(); // Call the regular method description
     }
+
 }

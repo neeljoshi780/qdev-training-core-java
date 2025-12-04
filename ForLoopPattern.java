@@ -10,10 +10,8 @@
 public class ForLoopPattern {
 
     public static void main(String[] args) {
-        
         // Number of rows in the pattern
         int rows = 5;
-
         // Using a for loop to print the pattern
         for (int i = 1; i <= rows; i++) {
             // Inner loop to print stars in each row
@@ -24,4 +22,5 @@ public class ForLoopPattern {
             System.out.println();
         }
     }
+
 }

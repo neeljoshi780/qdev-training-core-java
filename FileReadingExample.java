@@ -17,28 +17,26 @@ import java.io.*;
 public class FileReadingExample {
 
     public static void main(String[] args) {
-        
         // File object to represent the text file
         File file = new File("myTestFile.txt");
-
+    
         // Declare the BufferedReader outside the try block for manual closing
         BufferedReader reader = null;
-
+    
         try {
             // Initialize the BufferedReader
             reader = new BufferedReader(new FileReader(file));
-            
+        
             String line;
-            
+        
             // Read and display the contents line by line using a loop
             System.out.println("Reading data from 'myTestFile.txt':");
-            
+        
             // Loop through the file content line by line
             while ((line = reader.readLine()) != null) {
                 // String handling: Trim leading/trailing spaces and display the line
                 System.out.println(line.trim());
             }
-            
         } catch (FileNotFoundException e) {
             // Handling the case where the file is not found
             System.err.println("Error: The file 'myTestFile.txt' was not found.");
@@ -57,4 +55,5 @@ public class FileReadingExample {
             }
         }
     }
+
 }

@@ -1,5 +1,6 @@
 // Define the interface
 interface Animal {
+
     void sound(); // Abstract method
 
     default void sleep() {
@@ -9,30 +10,37 @@ interface Animal {
     static void breathe() {
         System.out.println("This animal is breathing");
     }
+
 }
 
 // Dog class implements the Animal interface
 class Dog implements Animal {
+
     // Implement the sound method
     public void sound() {
         System.out.println("Dog barks");
     }
+
 }
 
 // Cat class implements the Animal interface
 class Cat implements Animal {
+
     // Implement the sound method
     public void sound() {
         System.out.println("Cat meows");
     }
+
 }
 
 // Bird class implements the Animal interface
 class Bird implements Animal {
+
     // Implement the sound method
     public void sound() {
         System.out.println("Bird chirps");
     }
+
 }
 
 /**
@@ -48,31 +56,32 @@ class Bird implements Animal {
  * @since 2025-12-02
  */
 public class InterfaceDemo {
+
     public static void main(String[] args) {
-        
         // Creating objects of Dog, Cat, and Bird
         Animal dog = new Dog();
         Animal cat = new Cat();
         Animal bird = new Bird();
-        
+    
         // Calling the sound method (polymorphism)
         System.out.println("Dog:");
         dog.sound();
-        
+    
         System.out.println("\nCat:");
         cat.sound();
-        
+    
         System.out.println("\nBird:");
         bird.sound();
-        
+    
         // Calling the default method
         System.out.println("\nCalling the default sleep method from the interface:");
         dog.sleep();
         cat.sleep();
         bird.sleep();
-        
+    
         // Calling the static method
         System.out.println("\nCalling the static breathe method from the interface:");
         Animal.breathe();
     }
+
 }

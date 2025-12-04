@@ -55,24 +55,23 @@ public class Calculator {
 
     // Main method to test the constructors and mathematical operations
     public static void main(String[] args) {
-        
         // Calling the default constructor
         Calculator calc1 = new Calculator();  // This will use the default constructor
-        
+    
         // Perform operations using the default constructor's
         System.out.println("Sum: " + calc1.add());
         System.out.println("Difference: " + calc1.subtract());
         System.out.println("Product: " + calc1.multiply());
         System.out.println("Division: " + calc1.divide());
-
-        
+    
         // Calling the parameterized constructor with two integer arguments
         Calculator calc2 = new Calculator(10, 5);  // This will use the parameterized constructor
-        
+    
         // Perform operations using the parameterized constructor's values
         System.out.println("Sum: " + calc2.add());            // Sum of 10 and 5
         System.out.println("Difference: " + calc2.subtract()); // Difference of 10 and 5
         System.out.println("Product: " + calc2.multiply());    // Product of 10 and 5
         System.out.println("Division: " + calc2.divide());     // Division of 10 by 5
     }
+
 }

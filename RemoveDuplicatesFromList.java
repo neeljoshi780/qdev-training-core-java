@@ -15,7 +15,6 @@ import java.util.*;
 public class RemoveDuplicatesFromList {
 
     public static void main(String[] args) {
-        
         // --- Create a List with duplicate values ---
         List<String> list = new ArrayList<>();
         list.add("A");
@@ -27,23 +26,24 @@ public class RemoveDuplicatesFromList {
         list.add("E");
         list.add("E");  // Duplicate value
         list.add("E");  // Duplicate value
-        
+    
         // Printing original List
         System.out.println("Original List:");
         for (String str : list) {
             System.out.println(str);
         }
-        
+    
         // --- Remove duplicates using a Set ---
         Set<String> set = new HashSet<>(list);  // Automatically removes duplicates
-        
+    
         // Converting the Set back to a List
         List<String> uniqueList = new ArrayList<>(set);
-        
+    
         // Printing the List after removing duplicates
         System.out.println("\nList after removing duplicates:");
         for (String str : uniqueList) {
             System.out.println(str);
         }
     }
+
 }

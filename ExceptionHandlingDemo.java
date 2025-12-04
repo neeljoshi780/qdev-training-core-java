@@ -25,10 +25,9 @@ public class ExceptionHandlingDemo {
     }
 
     public static void main(String[] args) {
-
         // Scanner to take user input
         Scanner scanner = new Scanner(System.in);
-
+    
         try {
             // Try block to catch potential exceptions
             System.out.print("Enter your age: ");
@@ -52,8 +51,9 @@ public class ExceptionHandlingDemo {
             // Finally block that will always execute
             System.out.println("\nThis block is always executed, regardless of exceptions.");
         }
-
+    
         // Close the scanner object
         scanner.close();
     }
+
 }

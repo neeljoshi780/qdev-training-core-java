@@ -1,5 +1,6 @@
 // Parent class (superclass)
 class Animal {
+
     // Instance variable
     String name;
 
@@ -13,10 +14,12 @@ class Animal {
     public void sound() {
         System.out.println("Animal makes sound.");
     }
+
 }
 
 // Child class (subclass) extending Animal class
 class Dog extends Animal {
+
     // Instance variable in the child class
     String name;
 
@@ -40,6 +43,7 @@ class Dog extends Animal {
         System.out.println("Animal's name from super: " + super.name);  // Accessing parent class variable using 'super'
         System.out.println("Dog's name from this: " + this.name);        // Accessing current class variable using 'this'
     }
+
 }
 
 /**
@@ -52,14 +56,16 @@ class Dog extends Animal {
  * @since 2025-12-02
  */
 public class ThisSuperExample {
+
     public static void main(String[] args) {
         // Creating an instance of Dog class
         Dog dog = new Dog("Buddy", "Tiger");
-
+    
         // Calling the display method to show both 'this' and 'super' usage
         dog.display();
-
+    
         // Calling the overridden sound() method
         dog.sound();
     }
+
 }

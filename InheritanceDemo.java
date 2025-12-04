@@ -1,76 +1,101 @@
 // 1. Single Inheritance
 class Mammal {
+
     void eat() {
         System.out.println("Mammal is eating");
     }
+
 }
 
 class DogBreed extends Mammal {
+
     void bark() {
         System.out.println("Dog is barking");
     }
+
 }
 
 // 2. Multi-level Inheritance
 class MammalType {
+
     void eat() {
         System.out.println("Mammal is eating");
     }
+
 }
 
 class DogBreedType extends MammalType {
+
     void bark() {
         System.out.println("Dog is barking");
     }
+
 }
 
 class PuppyBreedType extends DogBreedType {
+
     void play() {
         System.out.println("Puppy is playing");
     }
+
 }
 
 // 3. Hierarchical Inheritance
 class AnimalKingdom {
+
     void eat() {
         System.out.println("Animal is eating");
     }
+
 }
 
 class DogType extends AnimalKingdom {
+
     void bark() {
         System.out.println("Dog is barking");
     }
+
 }
 
 class CatType extends AnimalKingdom {
+
     void meow() {
         System.out.println("Cat is meowing");
     }
+
 }
 
 // 4. Hybrid Inheritance (using interfaces for multiple inheritance)
 class Vehicle {
+
     void start() {
         System.out.println("Vehicle started.");
     }
+
 }
 
 class Car extends Vehicle {
+
     void drive() {
         System.out.println("Car is driving on road.");
     }
+
 }
 
 interface Flyable {
+
     void fly();
+
 }
 
 interface Swimmable {
+
     void swim();
+
 }
 
 class FlyingSwimmingCar extends Car implements Flyable, Swimmable {
+
     // Implementing methods from Flyable interface
     public void fly() {
         System.out.println("Flying car is flying in the sky!");
@@ -85,6 +110,7 @@ class FlyingSwimmingCar extends Car implements Flyable, Swimmable {
     void autoPilot() {
         System.out.println("Auto-pilot mode activated.");
     }
+
 }
 
 /**
@@ -111,30 +137,29 @@ class FlyingSwimmingCar extends Car implements Flyable, Swimmable {
 public class InheritanceDemo {
 
     public static void main(String[] args) {
-        
         // Single Inheritance
         System.out.println("Single Inheritance:");
         DogBreed dog1 = new DogBreed();
         dog1.eat();
         dog1.bark();
-
+    
         // Multi-level Inheritance
         System.out.println("\nMulti-level Inheritance:");
         PuppyBreedType puppy1 = new PuppyBreedType();
         puppy1.eat();
         puppy1.bark();
         puppy1.play();
-
+    
         // Hierarchical Inheritance
         System.out.println("\nHierarchical Inheritance:");
         DogType dog2 = new DogType();
         dog2.eat();
         dog2.bark();
-        
+    
         CatType cat1 = new CatType();
         cat1.eat();
         cat1.meow();
-
+    
         // Hybrid Inheritance
         System.out.println("\nHybrid Inheritance:");
         FlyingSwimmingCar car = new FlyingSwimmingCar();
@@ -144,4 +169,5 @@ public class InheritanceDemo {
         car.swim();   // Implemented from Swimmable interface
         car.autoPilot(); // Own method
     }
+
 }

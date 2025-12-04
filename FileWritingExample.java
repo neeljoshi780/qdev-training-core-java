@@ -15,33 +15,31 @@ import java.io.*;
 public class FileWritingExample {
 
     public static void main(String[] args) {
-        
         // Personal details to be written into the file
         String name = "Neel Joshi";
         int age = 21;
         String email = "neeljoshi780@gmail.com";
         String address = "Ashram Road, Ahmedabad, Gujarat, India";
-        
+    
         // File object to represent the text file
         File file = new File("myTestFile.txt");
-        
+    
         // Declare the BufferedWriter outside the try block
         BufferedWriter writer = null;
-        
+    
         try {
             // Initialize BufferedWriter
             writer = new BufferedWriter(new FileWriter(file));
-            
+        
             // Writing the personal details to the file
             writer.write("Personal Details:\n");
             writer.write("Name: " + name + "\n");
             writer.write("Age: " + age + "\n");
             writer.write("Email: " + email + "\n");
             writer.write("Address: " + address + "\n");
-            
+        
             // Confirmation message
             System.out.println("Personal details successfully written to the file 'myTestFile.txt'.");
-
         } catch (IOException e) {
             // Handling any I/O exceptions
             System.err.println("Error while writing to the file: " + e.getMessage());
@@ -56,4 +54,5 @@ public class FileWritingExample {
             }
         }
     }
+
 }

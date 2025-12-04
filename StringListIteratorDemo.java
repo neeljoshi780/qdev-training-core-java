@@ -13,23 +13,23 @@ import java.util.*;
 public class StringListIteratorDemo {
 
     public static void main(String[] args) {
-        
         // Creating a List to store String values
         List<String> list = new ArrayList<>();
-        
+    
         // Adding String values to the List
         list.add("Hello");
         list.add("Neel");
         list.add("Joshi");
         list.add("India");
-        
+    
         // Creating an Iterator to iterate through the List
         Iterator<String> iterator = list.iterator();
-        
+    
         // Printing all values using the Iterator
         System.out.println("List values using Iterator:");
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
     }
+
 }

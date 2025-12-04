@@ -71,4 +71,5 @@ public class StaticExample {
         StaticExample.incrementStaticCount(); // Increment static variable using static method
         System.out.println("Static Count after static method call: " + staticCount);
     }
+
 }

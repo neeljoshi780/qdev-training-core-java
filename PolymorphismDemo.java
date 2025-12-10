@@ -70,13 +70,13 @@ public class PolymorphismDemo {
         System.out.println("Sum of two integers: " + calc.add(10, 20));               // Calls add(int, int)
         System.out.println("Sum of three integers: " + calc.add(10, 20, 30));        // Calls add(int, int, int)
         System.out.println("Sum of two doubles: " + calc.add(10.5, 20.5));            // Calls add(double, double)
-    
+
         // **Demonstrating Runtime Polymorphism** (Method Overriding)
         System.out.println("\nDemonstrating Runtime Polymorphism:");
-    
+
         Animal animal1 = new Dog();  // Upcasting: Animal reference but Dog object
         Animal animal2 = new Cat();  // Upcasting: Animal reference but Cat object
-    
+
         animal1.sound();  // Calls Dog's overridden method
         animal2.sound();  // Calls Cat's overridden method
     }

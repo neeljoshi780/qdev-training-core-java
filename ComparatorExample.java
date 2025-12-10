@@ -4,6 +4,7 @@ import java.util.*;
 class Student {
 
     private String name;
+
     private int age;
 
     // Constructor
@@ -74,16 +75,16 @@ public class ComparatorExample {
         students.add(new Student("Alice", 22));
         students.add(new Student("Bob", 19));
         students.add(new Student("Diana", 21));
-    
+
         // Print original list
         System.out.println("Original List:");
         students.forEach(System.out::println);
-    
+
         // Sorting students by name (using NameComparator)
         students.sort(new NameComparator());
         System.out.println("\nSorted by Name (Alphabetically):");
         students.forEach(System.out::println);
-    
+
         // Sorting students by age (using AgeComparator)
         students.sort(new AgeComparator());
         System.out.println("\nSorted by Age:");

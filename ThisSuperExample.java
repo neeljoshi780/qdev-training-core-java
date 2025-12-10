@@ -60,10 +60,10 @@ public class ThisSuperExample {
     public static void main(String[] args) {
         // Creating an instance of Dog class
         Dog dog = new Dog("Buddy", "Tiger");
-    
+
         // Calling the display method to show both 'this' and 'super' usage
         dog.display();
-    
+
         // Calling the overridden sound() method
         dog.sound();
     }

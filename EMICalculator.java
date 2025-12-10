@@ -12,7 +12,9 @@ public class EMICalculator {
 
     // Instance variables to store principal, rate of interest, and loan tenure
     private double principal;
+
     private double annualRate;
+
     private int loanTenure;
 
     // Constructor to initialize the EMI calculator
@@ -26,13 +28,13 @@ public class EMICalculator {
     public double calculateEMI() {
         // Convert annual interest rate to monthly interest rate (in decimal form)
         double monthlyRate = annualRate / 12 / 100;
-    
+
         // Convert loan tenure from years to months
         int months = loanTenure * 12;
-    
+
         // EMI formula
         double emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
-    
+
         return emi;
     }
 
@@ -48,23 +50,23 @@ public class EMICalculator {
     public static void main(String[] args) {
         // Create a scanner object to read user input
         Scanner scanner = new Scanner(System.in);
-    
+
         // Ask the user for the loan details
         System.out.print("Enter the principal loan amount: ");
         double principal = scanner.nextDouble();
-    
+
         System.out.print("Enter the annual interest rate (in %): ");
         double annualRate = scanner.nextDouble();
-    
+
         System.out.print("Enter the loan tenure (in years): ");
         int loanTenure = scanner.nextInt();
-    
+
         // Create an EMI calculator object with the user input
         EMICalculator emiCalculator = new EMICalculator(principal, annualRate, loanTenure);
-    
+
         // Display the EMI details
         emiCalculator.displayEMIDetails();
-    
+
         // Close the scanner object
         scanner.close();
     }

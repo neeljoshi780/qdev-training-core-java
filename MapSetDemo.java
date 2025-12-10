@@ -20,13 +20,13 @@ public class MapSetDemo {
         // --- Using Map (HashMap) ---
         // Creating a Map to store key-value pairs
         Map<String, Integer> map = new HashMap<>();
-    
+
         // Adding key-value pairs to the Map
         map.put("Alice", 25);
         map.put("Bob", 30);
         map.put("Charlie", 35);
         map.put("David", 40);
-    
+
         // Printing Map using Iterator
         System.out.println("Map values (key-value pairs) using Iterator:");
         Iterator<Map.Entry<String, Integer>> mapIterator = map.entrySet().iterator();
@@ -34,17 +34,17 @@ public class MapSetDemo {
             Map.Entry<String, Integer> entry = mapIterator.next();
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-    
+
         // --- Using Set (HashSet) ---
         // Creating a Set to store unique elements
         Set<String> set = new HashSet<>();
-    
+
         // Adding elements to the Set
         set.add("Apple");
         set.add("Banana");
         set.add("Orange");
         set.add("Grapes");
-    
+
         // Printing Set using Iterator
         System.out.println("\nSet values using Iterator:");
         Iterator<String> setIterator = set.iterator();

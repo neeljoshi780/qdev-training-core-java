@@ -47,7 +47,7 @@ public class AbstractDemo {
         Shape circle = new Circle();
         circle.draw();  // Call the draw method for Circle
         circle.description(); // Call the regular method description
-    
+
         // Create an object of Rectangle
         Shape rectangle = new Rectangle();
         rectangle.draw();  // Call the draw method for Rectangle

@@ -55,18 +55,18 @@ public class EncapsulationDemo {
     public static void main(String[] args) {
         // Create a BankAccount object with an initial balance
         BankAccount account = new BankAccount(1000);
-    
+
         // Display current balance
         System.out.println("Current Balance: " + account.getBalance());
-    
+
         // Deposit money
         account.deposit(500);
         System.out.println("Balance after deposit: " + account.getBalance());
-    
+
         // Withdraw money
         account.withdraw(200);
         System.out.println("Balance after withdrawal: " + account.getBalance());
-    
+
         // Try to withdraw an invalid amount
         account.withdraw(1500); // Insufficient balance
         System.out.println("Balance after invalid withdrawal: " + account.getBalance());

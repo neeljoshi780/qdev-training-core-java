@@ -16,20 +16,20 @@ public class AgeCheck {
     
         // Initialize scanner object for user input
         Scanner scanner = new Scanner(System.in);
-    
+
         // Prompt user to enter their age
         System.out.print("Please enter your age: ");
-    
+
         // Check if the user entered a valid integer
         if (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid integer for age.");
             scanner.close();
             return; // Exit the program if input is not an integer
         }
-    
+
         // Read the user's age input
         int age = scanner.nextInt(); // User's age input as an integer
-    
+
         // Validate age to ensure it's a positive number
         if (age <= 0) {
             System.out.println("Invalid age entered. Age cannot be zero or negative.");
@@ -43,7 +43,7 @@ public class AgeCheck {
             // If the age is greater than 130, it’s considered an invalid age
             System.out.println("Invalid age entered. Please enter a reasonable age (below 130 years).");
         }
-    
+
         // Close the scanner to release resources
         scanner.close();
     }

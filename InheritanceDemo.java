@@ -142,24 +142,24 @@ public class InheritanceDemo {
         DogBreed dog1 = new DogBreed();
         dog1.eat();
         dog1.bark();
-    
+
         // Multi-level Inheritance
         System.out.println("\nMulti-level Inheritance:");
         PuppyBreedType puppy1 = new PuppyBreedType();
         puppy1.eat();
         puppy1.bark();
         puppy1.play();
-    
+
         // Hierarchical Inheritance
         System.out.println("\nHierarchical Inheritance:");
         DogType dog2 = new DogType();
         dog2.eat();
         dog2.bark();
-    
+
         CatType cat1 = new CatType();
         cat1.eat();
         cat1.meow();
-    
+
         // Hybrid Inheritance
         System.out.println("\nHybrid Inheritance:");
         FlyingSwimmingCar car = new FlyingSwimmingCar();

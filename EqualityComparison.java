@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  */
 public class EqualityComparison {
 
-    public static void main(String[] args) {  
+    public static void main(String[] args) {
         // 1. String Comparison
         String str1 = "Hello";
 
@@ -28,8 +28,11 @@ public class EqualityComparison {
 
         // 2. Integer Comparison
         Integer int1 = Integer.valueOf(100);
+
         Integer int2 = 100;
+
         Integer int3 = Integer.valueOf(100);
+
         Integer int4 = 200;
 
         System.out.println("2. Integer Comparison:");
@@ -44,7 +47,9 @@ public class EqualityComparison {
 
         // 3. BigDecimal Comparison
         BigDecimal bd1 = new BigDecimal("10.5");
+
         BigDecimal bd2 = new BigDecimal("10.50");
+
         BigDecimal bd3 = new BigDecimal("10.5");
 
         System.out.println("3. BigDecimal Comparison:");

@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Main {
+
     public static void main(String[] args) {
         // Creating a Map (HashMap in this case)
         Map<String, String> myMap = new HashMap<>();
@@ -27,4 +28,5 @@ public class Main {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
     }
+
 }
